@@ -1,19 +1,11 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-### MatJakt
-Et verktøy for som lar deg handle til best mulig pris.
+# Matjakt
 
-## Kjøring av prosjektet
+Dette er et Next.js TypeScript-prosjekt for en webapp som skal hjelpe brukere med å finne billigste butikk for deres handleliste. Foreløpig er dette bare et initiell oppsett.
 
-First, run the development server:
+## Kom i gang
+1. Installer avhengigheter: `npm install`
+2. Start dev-server: `npm run dev`
+3. Åpne [http://localhost:3000](http://localhost:3000)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy
+Deployet automatisk til Vercel ved commit til main.
