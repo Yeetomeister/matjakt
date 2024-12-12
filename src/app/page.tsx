@@ -28,7 +28,7 @@ export default function Home() {
             <button onClick={() => signOut()}>Logg ut</button>
             <br/>
             <br/>
-            <Link href="/api/products">
+            <Link href="/api/products/">
                 <button> Gå til produkter</button>
             </Link>
         </div>
