@@ -15,7 +15,7 @@ export async function GET() {
     try {
         const products = await prisma.product.findMany();
         return NextResponse.json(products);
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error("Error fetching products:", error);
         return NextResponse.json(
             { error: "Feil ved henting av produkter" },
@@ -44,7 +44,7 @@ export async function POST(request: Request) {
         });
 
         return NextResponse.json(newProduct, { status: 201 });
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error("Error creating product:", error);
         return NextResponse.json(
             { error: "Feil ved oppretting av produkt" },
