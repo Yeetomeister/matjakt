@@ -1,8 +1,7 @@
-// src/lib/auth.ts
-
+import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 
-export const authOptions = {
+export const authOptions: NextAuthOptions = {
     providers: [
         CredentialsProvider({
             name: "Credentials",
@@ -14,13 +13,13 @@ export const authOptions = {
                 const adminUsername = process.env.ADMIN_USERNAME;
                 const adminPassword = process.env.ADMIN_PASSWORD;
 
-                console.log("Attempting login")
+                console.log("Attempting login");
                 if (
                     credentials?.username === adminUsername &&
                     credentials?.password === adminPassword
                 ) {
                     console.log("Authorized");
-                    return { id: 1, name: "Admin" };
+                    return { id: "1", name: "Admin" };
                 }
 
                 console.log("Unauthorized");
